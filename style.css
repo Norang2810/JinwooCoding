@@ -1,0 +1,86 @@
+
+body {
+  background-image: url('your-image.jpg'); /* 배경 이미지 파일의 경로를 지정하세요. */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0; /* body 요소의 기본 여백을 제거합니다. */
+}
+
+/* 정사각형 컨테이너 스타일링 */
+#square-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 메뉴 바 스타일링 */
+#menu {
+  background-color: #333;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 40px;
+  border: 2px solid #555;
+  border-radius: 10px;
+}
+
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#menu li {
+  margin: 0;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  background-color: #444;
+}
+
+/* 선택된 메뉴 스타일링 */
+#menu a.selected {
+  font-weight: bold;
+}
+
+/* 마우스 호버 효과 */
+#menu a:hover {
+  background-color: #FF0000;
+}
+
+/* 내용 스타일링 */
+#content {
+  padding: 20px;
+  font-size: 24px;
+  color: #333;
+}
+/* 배경 이미지 설정 */
+body {
+  background-image: url('img.jpg'); /* 이미지 파일의 경로를 지정하세요. */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* 메뉴 컨테이너 스타일링 */
+#menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: transparent;
+}
+
+
+
+/* 나머지 스타일링은 이전과 동일합니다. */
+/* ... */

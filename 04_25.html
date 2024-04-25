@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>강의 시간표</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+      }
+      .day-column{
+        background-color: darkgrey;
+      }
+      .data-communication{
+        background-color: yellowgreen;
+      }
+      .WEB{
+        background-color: yellow;
+      }
+      input:checked +label {
+        color: red;
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <h3>강의 시간표</h3>
+    <table border="1">
+        <colgroup>
+            <col style="width: 8%">
+            <col style="width: 13%">
+            <col style="width: 15%">
+            <col style="width: 15%">
+            <col style="width: 15%">
+            <col style="width: 15%">
+        </colgroup>
+      <tr>
+        <th class="day-column">구분</th>
+        <th class="day-column">월</th>
+        <th class="day-column">화</th>
+        <th class="day-column">수</th>
+        <th class="day-column">목</th>
+        <th class="day-column">금</th>
+      </tr>
+      <tr>
+        <td bgcolor="skyblue"><b>1교시</b></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="skyblue"><b>2교시</b></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="skyblue"><b>3교시</b></td>
+        <td></td>
+        <td class ="data-communication">데이터통신</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td rowspan="2" bgcolor="maroon">기업연계프로젝트</td>
+      </tr>
+      <tr>
+        <td bgcolor="skyblue"><b>4교시</b></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="skyblue"><b>5교시</b></td>
+        
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td rowspan="2" class ="data-communication">데이터통신</class>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="skyblue"><b>6교시</b></td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <t>
+        <td bgcolor="skyblue"><b>7교시</b></td>
+        <td>&nbsp;</td>
+        <td rowspan="2" bgcolor="CBASE">영화속음악이야기</td>
+        <td rowspan="4" bgcolor="CBAS">고급자바프로그래밍</td>
+        <td rowspan="2" bgcolor="purple">평화의이해</td>
+        <td>&nbsp;</td>
+      </t>
+      <tr>
+        <td bgcolor="skyblue"><b>8교시</b></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="skyblue"><b>9교시</b></td>
+        <td rowspan="2" bgcolor="red">두얼굴의 중국역사</td>
+        <td rowspan="2" class="WEB">실무클라이언트프로그래밍</td>
+        <td rowspan="2" class="WEB">실무클라이언트프로그래밍</td>
+
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="skyblue"><b>10교시</b></td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+
+    <p>
+<table border="1">
+    <tr>
+        <td>취미</td>
+        <td>
+            <input type="checkbox" value="music" id="music"><label for="music">음악감상</label>
+            <input type="checkbox" value="sing " id="sing"><label for="sing">노래부르기</label>
+            <input type="checkbox" value="cook" id="cook"><label for="cook">요리</label>
+        </td>
+    </tr>
+</table>
+</p>
+<h4>전공</h4>
+<ul>
+    <li>
+        <label><input type="radio" name="field" value="">문예창작학과</label>
+    </li>
+    <li>
+        <label><input type="radio" name="field" value="">게임콘텐츠학과</label>
+    </li>
+    <li>
+        <label><input type="radio" name="field" value="">인공지능융합학과</label>
+    </li>
+    <li>
+        <label><input type="radio" name="field" value="">정보통신고학과</label>
+    </li>
+    <li>
+        <label><input type="radio" name="field" value="" checked>컴퓨터소프트웨어공학과</label>
+    </li>
+</ul>
+<input type="submit" value="저장">
+
+  </body>
+</html>
